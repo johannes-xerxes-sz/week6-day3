@@ -18,8 +18,10 @@ const minSubarraySum = (arr, n) => {
     }
     tempSum = minSum;
     for (let i = n; i < arr.length; i++) {
-        tempSum = tempSum - arr[i - n] + arr[i];
-        minSum = Math.min(minSum, tempSum)
+        // window movement in which it will check each the lowest
+        tempSum = tempSum - arr[i - n] + arr[i]; // temp 0 -> temp -> (lowest)
+        //tempsum (0 at first) = new tempsum - arr [array 0 number] + arr [array]
+        minSum = Math.min(minSum, tempSum) // change max to min
     }
     return minSum
 }
