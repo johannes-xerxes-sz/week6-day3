@@ -473,7 +473,7 @@ function sumFilteredData(array) {
 
 Time complexity:  O(n + n)
 Space complexity: O(1)
-Explaination: reduce. 
+Explaination: Two linear which returns. 
 Only returning the sum of the value number
 
 * -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
