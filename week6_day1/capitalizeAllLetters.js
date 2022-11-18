@@ -9,6 +9,6 @@ const capitalizeAllLetters = (array) => {
       }
       let result = capitalizeAllLetters(array.slice(0, -1))
       result.push(array.slice(array.length - 1)[0].toUpperCase())
-      return result
+      return result 
 }
 console.log(capitalizeAllLetters(['tony', 'truck']));
